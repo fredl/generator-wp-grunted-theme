@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 			},
 			js: {
 				files: [
-					'<%= jshintTag %>'
+					'<%= jshint.all %>'
 				],
 				tasks: [
 					'jshint',
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
 		copyto: {
 			dist: {
 				files: [
-					{cwd: '.', src: ['../**/*'], dest: '../dist/'}
+					{cwd: '..', src: ['**/*'], dest: '../dist', expand: true}
 				],
 				options: {
 					ignore: [
