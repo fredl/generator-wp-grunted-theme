@@ -135,7 +135,7 @@ module.exports = function(grunt) {
 		copyto: {
 			dist: {
 				files: [
-					{cwd: '../', src: ['**/*'], dest: '../dist/'}
+					{cwd: '.', src: ['../**/*'], dest: '../dist/'}
 				],
 				options: {
 					ignore: [
